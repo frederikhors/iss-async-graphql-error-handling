@@ -44,6 +44,9 @@ async fn mutate_with_error() -> anyhow::Result<String> {
     //     e.context("I cannot mutate now, sorry!")
     // })
 
+    // let str = can_i_mutate_on_db().await?;
+    // Ok(str)
+
     // END my other attempts
 
     match can_i_mutate_on_db().await {
